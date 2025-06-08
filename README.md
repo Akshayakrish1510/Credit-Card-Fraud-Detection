@@ -74,8 +74,13 @@ Results
 
 The best-performing model achieved:
 
-1. Precision: **XX.XX%**
-2. Recall: **YY.YY%**
-3. F1-Score: **ZZ.ZZ%**
-4. AUC-ROC: **AA.AA%**
+1. Precision:  [0] 1.00, [1] 0.84       
+2. Recall: [0] 1.00, [1] 0.73 
+3. F1-Score: [0] 1.00, [1] 0.78  
+4. AUC-ROC: 0.9703013330095943
+5. PR-AUC Score: 0.7496381817099266
+
+EXECUTIVE SUMMARY
+
+This project aims to detect fraudulent credit card transactions using machine learning. The data shows a heavy class imbalance, with fraud cases making up less than 0.2% of all transactions. After preprocessing, applying SMOTE to balance the data, and applying Optuna for Hyperparameter Tuning, the XGBoost model was trained and selected for its superior yet balanced performance. The final model showed strong Recall and Precision Scores, which are essential for minimizing False Negatives (missing actual fraud cases) whle also reducing false alarms (False Positives). The model was saved and successfully tested on simulated data, providing fraud probability scores for new randomly created transactions. This workflow demonstrates a scalable approach to building an effective fraud detection system.
 
