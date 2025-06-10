@@ -1,0 +1,6 @@
+EXECUTIVE SUMMARY
+
+This project aims to detect fraudulent credit card transactions using machine learning. The data shows a heavy class imbalance, with fraud cases making up less than 0.2% of all transactions.
+After preprocessing, applying SMOTE to balance the data, and applying Optuna for Hyperparameter Tuning, the XGBoost model was trained and selected for its superior yet balanced performance.
+The final model showed strong Recall and Precision Scores, which are essential for minimizing False Negatives (missing actual fraud cases) whle also reducing false alarms (False Positives). The model was saved and successfully tested on simulated data, providing fraud probability scores for new randomly created transactions.
+This workflow demonstrates a scalable approach to building an effective fraud detection system.
